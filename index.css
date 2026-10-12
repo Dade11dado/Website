@@ -1,0 +1,81 @@
+#hero{
+    width:100vw;
+    height:100vh;
+}
+
+#hero img{
+    display: block;
+    margin: auto;
+    height:calc(100vh / 3);
+    max-width:100%;
+}
+
+#presentation{
+	padding: 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    animation: myAnimationPresentation;
+    animation-delay: 3s;
+    animation-duration: 2s;
+	background-color: #c8102e;
+    animation-fill-mode: forwards;
+
+}
+
+.card{
+    height:calc(100vh / 2);
+    width:calc(100vw/3 - 10%);
+	background-color:white;
+	border-radius:15px;
+	text-align:center;
+}
+.logo-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: #333;
+}
+
+.logo-icon {
+  color: white;
+  padding: 8px 12px;
+  border-radius: 4px;
+}
+
+.logo-icon img{
+height:auto;
+width:auto;
+max-height:4rem;
+max-width:4rem;
+}
+
+.scopri-testo {
+  max-width: 0;
+  opacity: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  transition: max-width 0.3s ease, opacity 0.3s ease;
+  color: #c8102e;
+  font-size: 0.9rem;
+}
+
+#timoline:hover #scopri-testo-timoline {
+  max-width: 150px;
+  opacity: 1;
+}
+
+
+#clusane:hover #scopri-testo-clusane {
+  max-width: 150px;
+  opacity: 1;
+}
+
+
+#villa:hover #scopri-testo-villa {
+  max-width: 150px;
+  opacity: 1;
+}
