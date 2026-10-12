@@ -5,6 +5,10 @@
   color: #848884;
 }
 
+h1 {
+  color: black;
+}
+
 #hero {
   width: 100vw;
   height: 100vh;
