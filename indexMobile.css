@@ -1,0 +1,24 @@
+@media (max-width: 768px) {
+  #presentation {
+    flex-direction: column;
+    width: 100vw;
+    height: auto;
+    padding: 1rem;
+    justify-content: space-between;
+  }
+
+  .card {
+    width: calc(100vw - 10%);
+    margin-bottom: 1rem;
+  }
+
+  .logo-link {
+    display: flex;
+    flex-direction: column;
+  }
+  .scopri-testo {
+    max-width: 150px;
+    opacity: 1;
+    margin-bottom: 1rem;
+  }
+}

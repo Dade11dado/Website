@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="header.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="includedContent"></div>
+  </body>
+  <script>
+    $(function () {
+      console.log("DOM pronto, avvio caricamento...");
+      console.log(
+        "Elementi trovati con questo ID:",
+        $("#includedContent").length,
+      );
+      // L'ID deve combaciare esattamente con il div nel body
+      $("#includedContent").load(
+        "./header.html",
+        function (response, status, xhr) {
+          console.log("Stato richiesta:", status);
+          if (status === "error") {
+            console.error(
+              "Errore nel caricamento:",
+              xhr.status,
+              xhr.statusText,
+            );
+          }
+        },
+      );
+    });
+  </script>
+</html>
