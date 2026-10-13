@@ -6,13 +6,14 @@
 header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   background-color: #c8102e;
 }
 
 header img {
+  margin-left: 2rem;
   width: auto;
-  height: 5rem;
-  margin-right: 1rem;
+  height: 4rem;
   mix-blend-mode: multiply;
 }
 
@@ -23,12 +24,55 @@ ul {
 }
 li {
   padding: 0.2rem;
-  background-color: white;
+  color: white;
   font-size: 1.5rem;
   list-style-type: none;
   padding: 0.5rem;
   margin: 0.5rem;
-  border-radius: 15%;
+  font-weight: bold;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
+.hamburger-icon {
+  display: none;
+}
 
+@media (max-width: 768px) {
+  ul {
+    visibility: hidden;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background-color: white;
+    flex-direction: column;
+    align-items: center;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+  }
+  .hamburger-icon {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    margin-right: 2rem;
+  }
+
+  li {
+    color: #c8102e;
+    border-bottom: 2px solid #c8102e;
+  }
+
+  .hamburger-icon span {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    transition: all 0.3s ease;
+  }
+
+  .menu-toggle:checked ~ ul {
+    max-height: 600px;
+    visibility: visible;
+  }
+}

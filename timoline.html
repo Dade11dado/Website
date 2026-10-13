@@ -13,25 +13,8 @@
   </body>
   <script>
     $(function () {
-      console.log("DOM pronto, avvio caricamento...");
-      console.log(
-        "Elementi trovati con questo ID:",
-        $("#includedContent").length,
-      );
       // L'ID deve combaciare esattamente con il div nel body
-      $("#includedContent").load(
-        "./header.html",
-        function (response, status, xhr) {
-          console.log("Stato richiesta:", status);
-          if (status === "error") {
-            console.error(
-              "Errore nel caricamento:",
-              xhr.status,
-              xhr.statusText,
-            );
-          }
-        },
-      );
+      $("#includedContent").load( "./header.html");
     });
   </script>
 </html>

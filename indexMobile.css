@@ -15,7 +15,7 @@
   .logo-icon img {
     max-width: 0.5rem;
     max-height: none;
-    width: 4rem !important;
+    width: calc(100vw / 10) !important;
     height: auto !important ;
   }
 
