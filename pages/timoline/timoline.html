@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="../../components/header/header.css" />
+    <link rel="stylesheet" href="../../styles/imgGrid.css" />
+    <link rel="stylesheet" href="./timoline.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="includedContent"></div>
+    <div class="employeePresentation">
+
+      <h1>Chi siamo?</h1>
+      <div class="gallery">
+        <figure class="card">
+          <img src="../../imgs/Massi.jpg" alt="Massi" />
+          <figcaption>Dr. Massimiliano</figcaption>
+        </figure>
+        <figure class="card">
+          <img src="../../imgs/Dani.jpg" alt="Dani" />
+          <figcaption>Dr.ssa Daniela</figcaption>
+        </figure>
+        <figure class="card">
+          <img src="../../imgs/Davide.jpg" alt="Davide" />
+          <figcaption>Davide</figcaption>
+        </figure>
+      </div>
+    </div>
+    <div class="separator">
+      <div class="laFarmacia">
+        <h1>La farmacia</h1>
+      </div>
+  </body>
+  <script>
+    $(function () {
+      // L'ID deve combaciare esattamente con il div nel body
+      $("#includedContent").load("../../components/header/header.html");
+    });
+  </script>
+</html>

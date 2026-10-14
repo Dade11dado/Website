@@ -1,0 +1,34 @@
+.gallery {
+  display: grid;
+  /* Riducendo il min a 160px-180px ottieni card compatte e più colonne per riga */
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 14px;
+  padding: 2rem;
+}
+
+.card {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.card img {
+  width: 100%;
+  aspect-ratio: 1 / 1; /* Quadrato compatto */
+  object-fit: cover;
+  display: block;
+}
+
+.card figcaption {
+  padding: 8px 10px;
+  font-size: 1rem; /* Testo proporzionato alla miniatura */
+  color: #333333;
+  line-height: 1.3;
+  text-align: center;
+  flex-grow: 1;
+  font-weight: bold;
+}
