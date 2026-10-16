@@ -19,7 +19,7 @@ h1 {
 .presentation {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 32px; /* Spazio tra video e testo */
+  gap: 20px; /* Spazio tra video e testo */
 
   /* --- Spaziatura dai bordi della pagina --- */
   width: 100%; /* Limita la larghezza massima su schermi grandi */
@@ -27,8 +27,10 @@ h1 {
   padding: 2rem; /* Margine interno: stacca il contenuto dai bordi della finestra */
   box-sizing: border-box;
 }
-.presentation p .presentation iframe {
+.presentation p, .presentation iframe {
   min-width: 0;
+  align-items: center;
+  justify-content: center;
   margin: 0;
   width: 100%;
   box-sizing: border-box;
