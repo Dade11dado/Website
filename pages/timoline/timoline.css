@@ -1,5 +1,6 @@
 * {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  scroll-behavior: smooth;
 }
 h1 {
   text-align: center;
@@ -27,7 +28,8 @@ h1 {
   padding: 2rem; /* Margine interno: stacca il contenuto dai bordi della finestra */
   box-sizing: border-box;
 }
-.presentation p, .presentation iframe {
+.presentation p,
+.presentation iframe {
   min-width: 0;
   align-items: center;
   justify-content: center;
@@ -36,7 +38,7 @@ h1 {
   box-sizing: border-box;
 }
 
- p {
+p {
   line-height: 2rem;
   text-align: center;
 }
@@ -46,13 +48,21 @@ h1 {
   min-height: 350px;
 }
 
-@media (max-width:768px){
-  .presentation{
-   display: flex;
-   flex-direction: column;
+.information {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+@media (max-width: 768px) {
+  .presentation {
+    display: flex;
+    flex-direction: column;
   }
 
   .presentation iframe {
-  max-width: 100%;
-}
+    max-width: 100%;
+  }
 }
