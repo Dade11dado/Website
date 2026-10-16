@@ -73,6 +73,10 @@ li:hover {
     border-bottom: 2px solid #c8102e;
   }
 
+  li a{
+    color:#c8102e
+  }
+
   .hamburger-icon span {
     width: 25px;
     height: 3px;

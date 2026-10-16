@@ -34,7 +34,7 @@ h1 {
   box-sizing: border-box;
 }
 
-.presentation p {
+ p {
   line-height: 2rem;
   text-align: center;
 }
@@ -42,4 +42,15 @@ h1 {
 .presentation iframe {
   border: none;
   min-height: 350px;
+}
+
+@media (max-width:768px){
+  .presentation{
+   display: flex;
+   flex-direction: column;
+  }
+
+  .presentation iframe {
+  max-width: 100%;
+}
 }
