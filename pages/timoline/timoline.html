@@ -3,13 +3,32 @@
   <head>
     <link rel="stylesheet" href="../../components/header/header.css" />
     <link rel="stylesheet" href="../../styles/imgGrid.css" />
-    <link rel="stylesheet" href="./timoline.css" />
+    <link rel="stylesheet" href="../../styles/header.css" />
+    <link rel="stylesheet" href="../../styles/pages.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Timoline</title>
   </head>
+  <header>
+  <div class="logo_container">
+    <a href="../../index.html"><img src="../../imgs/logo.png" /></a>
+  </div>
+  <input type="checkbox" id="menu-toggle" class="menu-toggle" hidden />
+  <ul>
+    <li><a href="#servizi">Servizi</a></li>
+    <li><a href="#galenico">Laboratorio Galenico</a></li>
+    <li><a href="#cabina">Cabina estetica</a></li>
+    <li><a href="#">Contatti e orari</a></li>
+  </ul>
+  <label for="menu-toggle" class="hamburger-icon" aria-label="Apri menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </label>
+</header>
+
   <body>
     <div id="includedContent"></div>
     <div class="employeePresentation">
@@ -231,10 +250,4 @@ Richiedi una consulenza presso la Farmacia Danesi di Timoline di Corte Franca.
       </div>
     </div>
   </body>
-  <script>
-    $(function () {
-      // L'ID deve combaciare esattamente con il div nel body
-      $("#includedContent").load("../../components/header/header.html");
-    });
-  </script>
 </html>

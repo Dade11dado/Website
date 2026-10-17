@@ -10,10 +10,15 @@ header {
   background-color: #c8102e;
 }
 
-header img {
-  margin-left: 2rem;
+.logo_container img {
+  margin: 0; /* Rimuove margin-left: 2rem che sposta l'immagine */
+  max-width: 80%; /* Lascia un po' di respiro rispetto al bordo del cerchio */
+  max-height: 80%;
   width: auto;
-  height: 4rem;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  mix-blend-mode: multiply;
 }
 
 ul {
@@ -34,6 +39,28 @@ li {
 a {
   color: white;
   text-decoration: none;
+}
+
+.logo_container {
+  margin-left: 2rem;
+  padding: 0;
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: white;
+  overflow: hidden; /* Taglia via eventuali sbordature oltre il cerchio */
+}
+.logo_container a {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
 }
 
 li:hover {
@@ -72,8 +99,8 @@ li:hover {
     border-bottom: 2px solid #c8102e;
   }
 
-  li a{
-    color:#c8102e
+  li a {
+    color: #c8102e;
   }
 
   .hamburger-icon span {
