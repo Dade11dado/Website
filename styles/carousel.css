@@ -22,8 +22,7 @@
   flex: 0 0 100%;
   box-sizing: border-box;
 
-  /* Altezza fissa o minima per evitare che collassi a 0 */
-  height: 20rem; /* o min-height: 250px / aspect-ratio: 16/9 */
+  /* Altezza fissa o minima per evitare che collassi a 0 */ /* o min-height: 250px / aspect-ratio: 16/9 */
 
   display: flex;
   align-items: center;
