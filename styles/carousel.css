@@ -1,0 +1,51 @@
+/* Contenitore del carousel */
+
+.carousel {
+  width: 100%; /* Su mobile occupa tutta la larghezza; su desktop puoi usare max-width */
+  max-width: 50vw; /* Mantieni il 50vw per desktop */
+  padding: 10px;
+  box-sizing: border-box;
+
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+}
+
+/* Slide singola */
+.carousel li {
+  list-style-type: none;
+  background-color: #eeeeee;
+  border: 1px solid #dddddd;
+  padding: 20px;
+
+  flex: 0 0 100%;
+  box-sizing: border-box;
+
+  /* Altezza fissa o minima per evitare che collassi a 0 */
+  height: 20rem; /* o min-height: 250px / aspect-ratio: 16/9 */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  scroll-snap-align: center;
+}
+
+/* Immagine */
+.carousel li img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .father {
+    height: 100vh;
+  }
+  .carousel {
+    height: 100%;
+    width: 100vw;
+  }
+}

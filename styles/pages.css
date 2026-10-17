@@ -21,7 +21,6 @@ h1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px; /* Spazio tra video e testo */
-
   /* --- Spaziatura dai bordi della pagina --- */
   width: 100%; /* Limita la larghezza massima su schermi grandi */
   margin: 0 auto; /* Centra l'intero blocco nella pagina */
@@ -48,6 +47,11 @@ p {
   min-height: 350px;
 }
 
+.presentation img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
 .information {
   width: 100%;
   display: flex;
@@ -64,5 +68,13 @@ p {
 
   .presentation iframe {
     max-width: 100%;
+  }
+
+  .carousel {
+    max-width: 100%;
+  }
+
+  #cosmesi {
+    flex-direction: column;
   }
 }

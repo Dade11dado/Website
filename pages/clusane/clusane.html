@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="../../styles/imgGrid.css" />
     <link rel="stylesheet" href="../../styles/header.css" />
     <link rel="stylesheet" href="../../styles/pages.css" />
+    <link rel="stylesheet" href="../../styles/carousel.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
     <meta charset="UTF-8" />
@@ -20,8 +21,8 @@
     <input type="checkbox" id="menu-toggle" class="menu-toggle" hidden />
     <ul>
       <li><a href="#servizi">Servizi</a></li>
-      <li><a href="#galenico">Deblistering</a></li>
-      <li><a href="#cabina">Reparto cosmesi</a></li>
+      <li><a href="#deblistering">Deblistering</a></li>
+      <li><a href="#cosmesi">Reparto cosmesi</a></li>
       <li><a href="#">Contatti e orari</a></li>
     </ul>
     <label for="menu-toggle" class="hamburger-icon" aria-label="Apri menu">
@@ -30,7 +31,7 @@
       <span></span>
     </label>
   </header>
-   <body>
+  <body>
     <div id="includedContent"></div>
     <div class="employeePresentation">
       <h1>Chi siamo?</h1>
@@ -53,27 +54,35 @@
     <div id="LaFarmacia" class="laFarmacia">
       <h1>La farmacia</h1>
       <div class="presentation">
-        <iframe
-          src="https://drive.google.com/file/d/1716snefWAadw41veIRggIPM56QBQbPAK/preview"
-          frameborder="0"
-          width="640"
-          height="360"
-          allow="autoplay encrypted-media; fullscreen"
-          allowfullscreen
-        ></iframe>
+        <div>
+          <ul class="carousel">
+            <li data-accName="Item 1">
+              <img src="../../imgs/clusane1.jpg" alt="" />
+            </li>
+            <li data-accName="Item 2">
+              <img src="../../imgs/clusane2.jpg" alt="" />
+            </li>
+            <li data-accName="Item 3">
+              <img src="../../imgs/clusane3.jpg" alt="" />
+            </li>
+            <li data-accName="Item 4">
+              <img src="../../imgs/clusane4.jpg" alt="" />
+            </li>
+            <li data-accName="Item 4">
+              <img src="../../imgs/clusane5.jpg" alt="" />
+            </li>
+          </ul>
+        </div>
         <p>
-          La Farmacia Danesi è attiva da molti anni per offrire alla sua
-          clientela non solo una gamma completa di medicinali per la persona e
-          per l'utilizzo veterinario, ma anche un vastissimo assortimento di
-          prodotti per la cura del benessere e della bellezza di tutta la
-          famiglia. La nostra farmacia è soprattutto sinonimo di servizi alla
-          persona. Presso di noi puoi infatti sottoporti a consulenze
-          specialistiche, esami di telemedicina (elettrocardiogramma ed holter
-          pressorio o cardiaco),autoanalisi del sangue (apparecchio validato
-          dagli Spedali Civili di Brescia e dall'Università per gli studi di
-          Brescia), preparazioni galeniche e trattamenti estetici nella nostra
-          nuova cabina estetica. Il nostro team si avvale di collaboratori
-          preparati e competenti.
+          La Farmacia Danesi di Clusane d'Iseo, situata in via Risorgimento 153,
+          si è trasferita a febbraio 2024 in una nuova e moderna sede,
+          progettata per offrire un'esperienza ancora più efficiente e
+          confortevole. La farmacia è un punto di riferimento per la salute e il
+          benessere della comunità, grazie alla vasta gamma di servizi e
+          prodotti offerti, che spaziano dai farmaci tradizionali ai prodotti
+          naturali e omeopatici, dagli alimenti per neonati e bambini ai
+          prodotti per sportivi e dietetici, dai dermocosmetici agli
+          integratori.
         </p>
       </div>
     </div>
@@ -133,118 +142,120 @@
       </div>
     </div>
     <div class="separator"></div>
-      <div id ="galenico" class="galenico">
-        <h1>Laboratorio Galenico</h1>
-        <div class="presentation">
-          <p>
-            Il futuro è quello della personalizzazione della cura. Infatti
-            spesso il farmacista deve confrontarsi con il medico o con il
-            veterinario per adattare un determinato farmaco al paziente. Per
-            questo la farmacia Danesi di Corte Franca ha investito risorse per
-            la creazione del nuovo laboratorio per le preparazioni galeniche,
-            attrezzato con le più moderne tecnologie e gestito da personale
-            preparato e sempre aggiornato sulle nuove tecniche di preparazione.
-            Se hai bisogno di una preparazione particolare compila il form e
-            carica nell'apposita sezione la ricetta medica (obbligatoria);
-            saremo lieti di comunicarti la fattibilità, i costi ed i tempi di
-            preparazione del prodotto che ci hai richiesto.
-          </p>
-          <iframe
-            src="https://drive.google.com/file/d/13etmpBPv5Ax_7B1a-Bmm2K3kLwavU-mQ/preview"
-            frameborder="0"
-            width="640"
-            height="360"
-            allow="autoplay encrypted-media; fullscreen"
-            allowfullscreen
-          ></iframe>
-        </div>
-        <div class="product">
-          <p style="color: #c8102e; font-weight: bold">
-        Scopri i nostri prodotti
-      </p>
-      <div class="gallery">
-        <figure class="card">
-          <img src="../../imgs/DSC02795.jpg" alt="Massi" />
-          <figcaption>Tisane</figcaption>
-        </figure>
-        <figure class="card">
-          <img src="../../imgs/DSC02796.jpg" alt="Dani" />
-          <figcaption>Tisane</figcaption>
-        </figure>
-        <figure class="card">
-          <img src="../../imgs/DSC02803.jpg" alt="Davide" />
-          <figcaption>Tisane</figcaption>
-        </figure>
-        <figure class="card">
-          <img src="../../imgs/DSC02811.jpg" alt="Davide" />
-          <figcaption>Gel arnica</figcaption>
-        </figure>
-        <figure class="card">
-          <img src="../../imgs/DSC02813.jpg" alt="Davide" />
-          <figcaption>Gel arnica</figcaption>
-        </figure>
-        <figure class="card">
-          <img src="../../imgs/DSC02821.jpg" alt="Davide" />
-          <figcaption>Gel arnica</figcaption>
-        </figure>
-        <figure class="card">
-          <img src="../../imgs/DSC02823.jpg" alt="Davide" />
-          <figcaption>Gel arnica</figcaption>
-        </figure>
-        <figure class="card">
-          <img src="../../imgs/DSC02832.jpg" alt="Davide" />
-          <figcaption>Gel arnica</figcaption>
-        </figure>
-        <figure class="card">
-          <img src="../../imgs/DSC02839.jpg" alt="Davide" />
-          <figcaption>Collodio</figcaption>
-        </figure>
-        <figure class="card">
-          <img src="../../imgs/DSC02846.jpg" alt="Davide" />
-          <figcaption>Tisane</figcaption>
-        </figure>
-        <figure class="card">
-          <img src="../../imgs/DSC02852.jpg" alt="Davide" />
-          <figcaption>Gel arnica</figcaption>
-        </figure>
+    <div id="deblistering" class="deblistering">
+      <h1>Servizio di deblistering</h1>
+      <div class="presentation">
+        <p>
+          ✨ Hai tante pastiglie da prendere durante la giornata e hai paura di
+          sbagliare ora o di dimenticare una dose? Da oggi in farmacia è attivo
+          il nuovo servizio di Deblistering: al momento dell'acquisto dei tuoi
+          farmaci, possiamo confezionarli per te in pratiche bustine monodose
+          personalizzate. Ogni bustina riporta chiaramente: 📅 Giorno di
+          assunzione ⏰ Orario preciso 💊 Farmaci contenuti all'interno Un aiuto
+          concreto per gestire la tua salute in modo semplice, sicuro e senza
+          stress, ideale anche per anziani o per chi segue terapie complesse. 📍
+          Passa a trovarci in farmacia per scoprire come attivare il servizio
+          per te o per i tuoi cari!
+        </p>
+        <img
+          src="https://scontent-mxp1-1.xx.fbcdn.net/v/t45.1600-4/802652733_1074034645377769_5599613830400272418_n.png?stp=c0.135.1080.1080a_cp0_dst-jpg_q90_sh2.08_spS444_tt6&cstp=mx1080x1080&ctp=s1080x1080&_nc_cat=106&ccb=1-7&_nc_sid=f0a831&_nc_ohc=v1r3tV0TR20Q7kNvwGaVIgu&_nc_oc=AdqIYQdSJLcpqtu5_lbl_gn3b2R6UG69UhvilVPb4s0qPZTGoR0Zb43IPqxjXSy3L10&_nc_zt=1&_nc_ht=scontent-mxp1-1.xx&_nc_gid=XJf6vv8fgN8N8uMqzig4CA&_nc_ss=7b2a8&oh=00_AQPkAJg5BZsgnDb0W3Dg4fkJwzylHpjBNF5VMyqB5mlslg&oe=6AD960BF"
+          alt=""
+        />
       </div>
+    </div>
+    <div class="separator"></div>
+    <div id="cosmesi">
+      <h1>Reparto cosmesi</h1>
+      <div class="presentation">
+        <p>
+          Alla Farmacia Danesi trovi davvero tutto quello che ti serve, ben
+          oltre i classici medicinali da banco. Oltre a prendersi cura della tua
+          salute con i farmaci tradizionali, integratori e prodotti per la
+          medicazione infatti, abbiamo un reparto dedicato all'estetica e alla
+          cosmesi perfetto per coccolarsi un po', con un'ampia gamme di creme
+          viso, creme corpo sieri oltre a tutta una serie di prodotti per
+          truccarsi. CHe aspetti? vieni a fare un salto a trovarci
+        </p>
+        <div class="father">
+          <ul class="carousel">
+            <li data-accName="Item 1">
+              <img src="../../imgs/cosmesiclu1.jpg" alt="" />
+            </li>
+            <li data-accName="Item 2">
+              <img src="../../imgs/cosmesiclu2.jpg" alt="" />
+            </li>
+            <li data-accName="Item 3">
+              <img src="../../imgs/cosmesiclu3.jpg" alt="" />
+            </li>
+            <li data-accName="Item 4">
+              <img src="../../imgs/cosmesiclu4.jpg" alt="" />
+            </li>
+            <li data-accName="Item 4">
+              <img src="../../imgs/cosmesiclu5.jpg" alt="" />
+            </li>
+            <li data-accName="Item 4">
+              <img src="../../imgs/cosmesiclu6.jpg" alt="" />
+            </li>
+          </ul>
         </div>
       </div>
-      <div class="separator"></div>
-      <div id="cabina">
-<h1>Cabina estetica</h1>
-<div class="presentation">
-          <p>
-          Salute è sinonimo di benessere. Per questo motivo abbiamo deciso di dotare la farmacia di uno spazio dedicato all'estetica. L'idea è quella di coniugare prodotti di altissima qualità con le tecnologie estetiche più all'avanguardia in una cabina moderna e rilassante. Oltre ai tradizionali trattamenti estetici (praticati sempre con utilizzo di prodotti d'alta qualità) i nostri fiori all'occhiello sono i trattamenti anti-age con radiofrequenza, l'epilazione definitiva con laser diodo e lo sbiancamento dentale cosmetico.
-
-Richiedi una consulenza presso la Farmacia Danesi di Timoline di Corte Franca.
-          </p>
-          <iframe
-            src="https://drive.google.com/file/d/16JpfnhTWWXDqfzVj4IGUok52gPezR2bE/preview"
-            frameborder="0"
-            width="640"
-            height="360"
-            allow="autoplay encrypted-media; fullscreen"
-            allowfullscreen
-          ></iframe>
-        </div>
-      </div>
-      <div class="separator"></div>
-      <div id="contatcs">
-        <h1>Contatti e orari</h1>
-        <div class="information">
-          <div>
-<h2>Puoi trovarci dal lunedì al venerdì</h2>
-          <h3 style="color:#c8102e">dalle 8:30 alle 19:30</h3>
+    </div>
+    <div class="separator"></div>
+    <div id="contatcs">
+      <h1>Contatti e orari</h1>
+      <div class="information">
+        <div>
+          <h2>Puoi trovarci dal lunedì al venerdì</h2>
+          <h3 style="color: #c8102e">dalle 8:30 alle 19:30</h3>
           <h2>Il sabato</h2>
-          <h3 style="color:#c8102e">dalle 8:30 alle 19</h3>
-          </div>
-          <div>
-            <h2>Chiamaci allo 0309826701</h2>
-            <h2>O invia un messaggio whatsapp allo 3381291217</h2>
-          </div>
+          <h3 style="color: #c8102e">dalle 8:30 alle 19</h3>
+        </div>
+        <div>
+          <h2>Chiamaci allo 0309826701</h2>
+          <h2>O invia un messaggio whatsapp allo 3381291217</h2>
         </div>
       </div>
     </div>
   </body>
+  <script>
+    const carousels = document.querySelectorAll(".carousel");
+    const intervalTime = 2000; // Tempo X in millisecondi (es. 3 secondi)
+    let autoPlayTimer;
+
+    function startAutoPlay() {
+      autoPlayTimer = setInterval(() => {
+        // Calcola se siamo arrivati alla fine dello scroll orizzontale
+        carousels.forEach((carousel) => {
+          const maxScrollLeft = carousel.scrollWidth - carousel.clientWidth;
+          const isAtEnd = Math.ceil(carousel.scrollLeft) >= maxScrollLeft - 5; // tolleranza di 5px per arrotondamenti
+
+          if (isAtEnd) {
+            // Torna all'inizio se ha raggiunto l'ultima immagine
+            carousel.scrollTo({ left: 0, behavior: "smooth" });
+          } else {
+            // Avanza della larghezza esatta visibile del contenitore
+            carousel.scrollBy({
+              left: carousel.clientWidth,
+              behavior: "smooth",
+            });
+          }
+        });
+      }, intervalTime);
+    }
+
+    function stopAutoPlay() {
+      clearInterval(autoPlayTimer);
+    }
+
+    // Avvia lo scorrimento automatico
+    startAutoPlay();
+
+    // Pausa quando l'utente passa sopra con il mouse o interagisce
+    carousels.forEach((carousel) => {
+      carousel.addEventListener("mouseenter", stopAutoPlay);
+      carousel.addEventListener("mouseleave", startAutoPlay);
+      carousel.addEventListener("touchstart", stopAutoPlay, { passive: true });
+      carousel.addEventListener("touchend", startAutoPlay, { passive: true });
+    });
+  </script>
 </html>
