@@ -54,24 +54,44 @@
     <div id="LaFarmacia" class="laFarmacia">
       <h1>La farmacia</h1>
       <div class="presentation">
-        <div>
-          <ul class="carousel">
-            <li data-accName="Item 1">
-              <img src="../../imgs/clusane1.jpg" alt="" />
-            </li>
-            <li data-accName="Item 2">
-              <img src="../../imgs/clusane2.jpg" alt="" />
-            </li>
-            <li data-accName="Item 3">
-              <img src="../../imgs/clusane3.jpg" alt="" />
-            </li>
-            <li data-accName="Item 4">
-              <img src="../../imgs/clusane4.jpg" alt="" />
-            </li>
-            <li data-accName="Item 4">
-              <img src="../../imgs/clusane5.jpg" alt="" />
-            </li>
-          </ul>
+        <div class="carousel-container">
+          <div class="carousel-track">
+            <div class="carousel-slide">
+              <img
+                src="../../imgs/clusane1.jpg"
+                alt="Descrizione 1"
+                loading="lazy"
+              />
+            </div>
+            <div class="carousel-slide">
+              <img
+                src="../../imgs/clusane2.jpg"
+                alt="Descrizione 2"
+                loading="lazy"
+              />
+            </div>
+            <div class="carousel-slide">
+              <img
+                src="../../imgs/clusane3.jpg"
+                alt="Descrizione 3"
+                loading="lazy"
+              />
+            </div>
+            <div class="carousel-slide">
+              <img
+                src="../../imgs/clusane4.jpg"
+                alt="Descrizione 4"
+                loading="lazy"
+              />
+            </div>
+            <div class="carousel-slide">
+              <img
+                src="../../imgs/clusane5.jpg"
+                alt="Descrizione 4"
+                loading="lazy"
+              />
+            </div>
+          </div>
         </div>
         <p>
           La Farmacia Danesi di Clusane d'Iseo, situata in via Risorgimento 153,
@@ -176,27 +196,51 @@
           viso, creme corpo sieri oltre a tutta una serie di prodotti per
           truccarsi. CHe aspetti? vieni a fare un salto a trovarci
         </p>
-        <div class="father">
-          <ul class="carousel">
-            <li data-accName="Item 1">
-              <img src="../../imgs/cosmesiclu1.jpg" alt="" />
-            </li>
-            <li data-accName="Item 2">
-              <img src="../../imgs/cosmesiclu2.jpg" alt="" />
-            </li>
-            <li data-accName="Item 3">
-              <img src="../../imgs/cosmesiclu3.jpg" alt="" />
-            </li>
-            <li data-accName="Item 4">
-              <img src="../../imgs/cosmesiclu4.jpg" alt="" />
-            </li>
-            <li data-accName="Item 4">
-              <img src="../../imgs/cosmesiclu5.jpg" alt="" />
-            </li>
-            <li data-accName="Item 4">
-              <img src="../../imgs/cosmesiclu6.jpg" alt="" />
-            </li>
-          </ul>
+        <div class="carousel-container">
+          <div class="carousel-track">
+            <div class="carousel-slide">
+              <img
+                src="../../imgs/cosmesiclu1.jpg"
+                alt="Descrizione 1"
+                loading="lazy"
+              />
+            </div>
+            <div class="carousel-slide">
+              <img
+                src="../../imgs/cosmesiclu2.jpg"
+                alt="Descrizione 2"
+                loading="lazy"
+              />
+            </div>
+            <div class="carousel-slide">
+              <img
+                src="../../imgs/cosmesiclu3.jpg"
+                alt="Descrizione 3"
+                loading="lazy"
+              />
+            </div>
+            <div class="carousel-slide">
+              <img
+                src="../../imgs/cosmesiclu4.jpg"
+                alt="Descrizione 4"
+                loading="lazy"
+              />
+            </div>
+            <div class="carousel-slide">
+              <img
+                src="../../imgs/cosmesiclu5.jpg"
+                alt="Descrizione 4"
+                loading="lazy"
+              />
+            </div>
+            <div class="carousel-slide">
+              <img
+                src="../../imgs/cosmesiclu6.jpg"
+                alt="Descrizione 4"
+                loading="lazy"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -218,44 +262,62 @@
     </div>
   </body>
   <script>
-    const carousels = document.querySelectorAll(".carousel");
-    const intervalTime = 2000; // Tempo X in millisecondi (es. 3 secondi)
-    let autoPlayTimer;
+    function initCarousel(container) {
+      // Seleziona i controlli interni a questo specifico container
+      const track = container.querySelector(".carousel-track");
 
-    function startAutoPlay() {
-      autoPlayTimer = setInterval(() => {
-        // Calcola se siamo arrivati alla fine dello scroll orizzontale
-        carousels.forEach((carousel) => {
-          const maxScrollLeft = carousel.scrollWidth - carousel.clientWidth;
-          const isAtEnd = Math.ceil(carousel.scrollLeft) >= maxScrollLeft - 5; // tolleranza di 5px per arrotondamenti
+      if (!track) return;
 
-          if (isAtEnd) {
-            // Torna all'inizio se ha raggiunto l'ultima immagine
-            carousel.scrollTo({ left: 0, behavior: "smooth" });
-          } else {
-            // Avanza della larghezza esatta visibile del contenitore
-            carousel.scrollBy({
-              left: carousel.clientWidth,
-              behavior: "smooth",
-            });
-          }
-        });
-      }, intervalTime);
+      const delay = parseInt(container.dataset.autoplay, 10) || 2000;
+      let autoplayTimer = null;
+
+      function scrollNext() {
+        const maxScrollLeft = track.scrollWidth - track.clientWidth;
+        if (track.scrollLeft >= maxScrollLeft - 5) {
+          track.scrollTo({ left: 0, behavior: "smooth" });
+        } else {
+          track.scrollBy({ left: track.clientWidth, behavior: "smooth" });
+        }
+      }
+
+      function scrollPrev() {
+        if (track.scrollLeft <= 5) {
+          track.scrollTo({
+            left: track.scrollWidth - track.clientWidth,
+            behavior: "smooth",
+          });
+        } else {
+          track.scrollBy({ left: -track.clientWidth, behavior: "smooth" });
+        }
+      }
+
+      function startAutoplay() {
+        if (!autoplayTimer) {
+          autoplayTimer = setInterval(scrollNext, delay);
+        }
+      }
+
+      function stopAutoplay() {
+        clearInterval(autoplayTimer);
+        autoplayTimer = null;
+      }
+
+      function resetAutoplay() {
+        stopAutoplay();
+        startAutoplay();
+      }
+
+      // Pausa su interazione mouse e touch
+      container.addEventListener("mouseenter", stopAutoplay);
+      container.addEventListener("mouseleave", startAutoplay);
+      container.addEventListener("touchstart", stopAutoplay, { passive: true });
+      container.addEventListener("touchend", startAutoplay, { passive: true });
+
+      // Avvio iniziale
+      startAutoplay();
     }
 
-    function stopAutoPlay() {
-      clearInterval(autoPlayTimer);
-    }
-
-    // Avvia lo scorrimento automatico
-    startAutoPlay();
-
-    // Pausa quando l'utente passa sopra con il mouse o interagisce
-    carousels.forEach((carousel) => {
-      carousel.addEventListener("mouseenter", stopAutoPlay);
-      carousel.addEventListener("mouseleave", startAutoPlay);
-      carousel.addEventListener("touchstart", stopAutoPlay, { passive: true });
-      carousel.addEventListener("touchend", startAutoPlay, { passive: true });
-    });
+    // Inizializza tutte le istanze presenti nel DOM
+    document.querySelectorAll(".carousel-container").forEach(initCarousel);
   </script>
 </html>
