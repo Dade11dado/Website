@@ -9,11 +9,14 @@
      <link rel="icon" type="image/x-icon" href="./imgs/logo.png">
   </head>
   <body>
-    <a href="./pages/consegne">
       <div id="notification">
+        <a href="./pages/consegne.html">
       <img src="./imgs/logo_bianco.png" alt="">
       <h2>Hai già provato il nostro servizio di consegna a domicilio?</h2>
+      </a>
+      <span id="close">X</span>
     </div>
+    
     </a>
     <div id="hero">
       <img src="./imgs/Progetto senza titolo (13).png" />
@@ -101,6 +104,12 @@
         const banner = document.getElementById('notification');
         banner.classList.remove('visibile');
       }, 10000);
+
+      document.getElementById("close").addEventListener("click",()=>{
+        console.log("clicked")
+        const banner = document.getElementById('notification');
+        banner.classList.remove('visibile');
+      })
     });
   </script>
 </html>
