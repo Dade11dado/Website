@@ -9,6 +9,12 @@
      <link rel="icon" type="image/x-icon" href="./imgs/logo.png">
   </head>
   <body>
+    <a href="./pages/consegne">
+      <div id="notification">
+      <img src="./imgs/logo_bianco.png" alt="">
+      <h2>Hai già provato il nostro servizio di consegna a domicilio?</h2>
+    </div>
+    </a>
     <div id="hero">
       <img src="./imgs/Progetto senza titolo (13).png" />
       <div id="presentation">
@@ -82,4 +88,19 @@
       </div>
     </div>
   </body>
+  <script>
+    window.addEventListener('load', () => {
+      const delayMs = 3000; // Tempo di attesa in millisecondi (3000 ms = 3 secondi)
+
+      setTimeout(() => {
+        const banner = document.getElementById('notification');
+        banner.classList.add('visibile');
+      }, delayMs);
+
+      setTimeout(() => {
+        const banner = document.getElementById('notification');
+        banner.classList.remove('visibile');
+      }, 10000);
+    });
+  </script>
 </html>

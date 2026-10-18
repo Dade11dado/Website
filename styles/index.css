@@ -5,6 +5,43 @@
   color: #848884;
 }
 
+#notification {
+  width: 300px;
+  padding: 20px;
+  background-color: #c8102e;
+  color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+
+  /* Posizionamento (opzionale: fisso o relativo alle tue esigenze) */
+  position: fixed;
+  top: 40px;
+  left: 20px;
+
+  /* Nascosto fuori dalla vista */
+  opacity: 0;
+  transform: translateX(-120%);
+
+  /* Transizione fluida */
+  transition:
+    transform 0.6s cubic-bezier(0.16, 1, 0.3, 1),
+    opacity 0.6s ease;
+}
+
+#notification h2 {
+  color: white;
+  font-size: 1rem;
+}
+
+#notification img {
+  height: 2rem;
+}
+
+#notification.visibile {
+  opacity: 1;
+  transform: translateX(0);
+}
+
 h1 {
   color: black;
 }
@@ -101,4 +138,20 @@ h1 {
 .google-maps iframe {
   width: 100%;
   height: 100%;
+}
+
+prova {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  height: auto;
+  width: auto;
+  gap: 10px;
+  padding: 1rem;
+  border: 2px solid #c8102e;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-radius: 10px;
+  align-items: center;
 }
