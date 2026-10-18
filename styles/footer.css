@@ -8,6 +8,8 @@
   flex-direction: row;
   justify-content: center;
   padding: 4rem;
+  gap: 20px; /* Spazio tra il primo elemento e la mappa */
+  align-items: center;
 }
 
 .information div {
@@ -17,15 +19,65 @@
 }
 
 table {
-  width: 100%;
   text-align: left;
+  margin-inline: auto !important;
+  width: auto;
 }
 
-.information a {
-  font: bold 1rem;
+table th,
+table td {
+  white-space: nowrap; /* impedisce che le parole vengano compresse verticalmente */
+  padding: 10px 16px; /* dà respiro interno a ogni cella */
+}
+
+.whatsapp {
+  /* 1. Allinea icona e testo orizzontalmente e verticalmente */
+  display: inline-flex;
+  align-items: center;
+  gap: 10px; /* Spazio uniforme tra icona e testo */
+
+  /* Stili grafici originali */
+  font: bold 1rem sans-serif;
   text-decoration: none;
   color: #333333;
-  padding: 10px 16px 10px 16px;
-  border-radius: 10px;
+  padding: 10px 16px;
+  border-radius: 15px;
   border: 5px solid #25d366;
+}
+.space {
+  height: 3rem;
+}
+.information div a img {
+  width: 40px; /* Regola la larghezza in base alle tue preferenze (es. 20px - 28px) */
+  height: 40px; /* Stessa altezza */
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.google-maps {
+  /* 1. Gestione dello spazio Flex */
+  flex: 1; /* Fa sì che la mappa occupi lo spazio rimanente */
+  min-width: 300px; /* Evita che diventi troppo piccola sui dispositivi mobili */
+
+  /* 2. Dimensioni esplicite necessarie per Flexbox */
+  height: 450px; /* Scegli l'altezza che preferisci per la mappa */
+}
+
+/* L'iframe si espande per riempire il 100% del suo contenitore */
+.google-maps iframe {
+  width: 100%;
+  height: 100%;
+}
+@media (max-width: 768px) {
+  .information {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .whatsapp {
+  }
+
+  .google-maps {
+    width: 100%;
+  }
 }
