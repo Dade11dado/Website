@@ -2,29 +2,1458 @@
 <html lang="it">
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="../styles/header.css" />
-    <link rel="stylesheet" href="../styles/consegne.css">
+    <link rel="stylesheet" href="../styles/consegne.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Consegne</title>
   </head>
+  <header>
+    <div class="logo_container" style="background-color: #c8102e">
+      <a href="../../index.html"><img src="../imgs/logo_bianco.png" /></a>
+    </div>
+    <h2 style="color: white; flex: 1">Consegne a domicilio</h2>
+  </header>
   <body>
-    <header>
-      <div class="logo_container" style="background-color: #c8102e">
-        <a href="../../index.html"><img src="../imgs/logo_bianco.png" /></a>
-       
-      </div>
-       <h2 style="color:white; flex:1">Consegne a domicilio</h2>
-      </header
-      <body>
+    <body>
       <h2>Consegne a domicilio</h2>
-      <h3>La farmacia Danesi cerca sempre di venire incontro alle esigenze dei propri clienti, per questo è stato isitutito il serivio di consegna a domicilio</h3>
-      <h3>Come funziona?</h3>
+      <h3>
+        La farmacia Danesi cerca sempre di venire incontro alle esigenze dei
+        propri clienti, per questo è stato isitutito il serivio di consegna a
+        domicilio
+      </h3>
+      <h2>Come funziona?</h2>
       <ul>
-        <li>Invia la prescirizione su whatsapp al numero 3801291217</li>
-        <li>Concorda indirizzo di consegna con il personale che risponderà</li>
-        <li>Effettua il pagamnto tramite satispay o bonifico bancario</li>
-        <li>Una volta ricevuto il pagamento riceverai il prodotto a casa nell'arco di 24h</li>
+        <li>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 500 500"
+            width="100%"
+            height="100%"
+          >
+            <defs>
+              <!-- Ombra morbida per il dispositivo -->
+              <filter
+                id="phone-shadow"
+                x="-20%"
+                y="-20%"
+                width="150%"
+                height="150%"
+              >
+                <feDropShadow
+                  dx="0"
+                  dy="10"
+                  stdDeviation="12"
+                  flood-color="#0f172a"
+                  flood-opacity="0.18"
+                />
+              </filter>
+
+              <!-- Gradiente per lo sfondo dello schermo -->
+              <linearGradient
+                id="screen-grad"
+                x1="0%"
+                y1="0%"
+                x2="100%"
+                y2="100%"
+              >
+                <stop offset="0%" stop-color="#3b82f6" />
+                <stop offset="50%" stop-color="#6366f1" />
+                <stop offset="100%" stop-color="#8b5cf6" />
+              </linearGradient>
+
+              <!-- Riflesso vetro schermo -->
+              <linearGradient
+                id="glass-glare"
+                x1="0%"
+                y1="0%"
+                x2="100%"
+                y2="100%"
+              >
+                <stop offset="0%" stop-color="#ffffff" stop-opacity="0.25" />
+                <stop offset="40%" stop-color="#ffffff" stop-opacity="0.05" />
+                <stop offset="41%" stop-color="#ffffff" stop-opacity="0" />
+              </linearGradient>
+            </defs>
+
+            <g transform="translate(20, 10)">
+              <!-- ================= DITA DI SUPPORTO (DIETRO) ================= -->
+              <!-- Mignolo / Anulare che spuntano a destra dal retro -->
+              <rect
+                x="300"
+                y="270"
+                width="45"
+                height="24"
+                rx="12"
+                fill="#e2997a"
+              />
+              <rect
+                x="302"
+                y="235"
+                width="45"
+                height="24"
+                rx="12"
+                fill="#e2997a"
+              />
+              <rect
+                x="300"
+                y="200"
+                width="45"
+                height="24"
+                rx="12"
+                fill="#e8a588"
+              />
+
+              <!-- ================= SMARTPHONE ================= -->
+              <!-- Scocca del telefono -->
+              <rect
+                x="150"
+                y="80"
+                width="170"
+                height="320"
+                rx="28"
+                fill="#1e293b"
+                filter="url(#phone-shadow)"
+              />
+              <!-- Bordo metallico interno -->
+              <rect
+                x="152"
+                y="82"
+                width="166"
+                height="316"
+                rx="26"
+                fill="none"
+                stroke="#475569"
+                stroke-width="2"
+              />
+
+              <!-- Schermo attivo -->
+              <rect
+                x="158"
+                y="90"
+                width="154"
+                height="300"
+                rx="20"
+                fill="url(#screen-grad)"
+              />
+
+              <!-- Riflesso diagonale sullo schermo -->
+              <rect
+                x="158"
+                y="90"
+                width="154"
+                height="300"
+                rx="20"
+                fill="url(#glass-glare)"
+              />
+
+              <!-- Dynamic Island / Fotocamera frontale -->
+              <rect
+                x="210"
+                y="98"
+                width="50"
+                height="12"
+                rx="6"
+                fill="#0f172a"
+              />
+              <!-- Obiettivo fotocamera minuscolo -->
+              <circle cx="248" cy="104" r="3" fill="#1e293b" />
+
+              <!-- Barra Home inferiore -->
+              <rect
+                x="205"
+                y="375"
+                width="60"
+                height="4"
+                rx="2"
+                fill="#ffffff"
+                opacity="0.8"
+              />
+
+              <!-- Elementi grafici fittizi sullo schermo -->
+              <rect
+                x="175"
+                y="140"
+                width="120"
+                height="40"
+                rx="10"
+                fill="#ffffff"
+                opacity="0.2"
+              />
+              <circle cx="195" cy="160" r="12" fill="#ffffff" opacity="0.4" />
+              <rect
+                x="215"
+                y="152"
+                width="65"
+                height="6"
+                rx="3"
+                fill="#ffffff"
+                opacity="0.7"
+              />
+              <rect
+                x="215"
+                y="163"
+                width="40"
+                height="5"
+                rx="2.5"
+                fill="#ffffff"
+                opacity="0.4"
+              />
+
+              <rect
+                x="175"
+                y="195"
+                width="120"
+                height="65"
+                rx="12"
+                fill="#ffffff"
+                opacity="0.15"
+              />
+              <rect
+                x="175"
+                y="270"
+                width="55"
+                height="55"
+                rx="12"
+                fill="#ffffff"
+                opacity="0.2"
+              />
+              <rect
+                x="240"
+                y="270"
+                width="55"
+                height="55"
+                rx="12"
+                fill="#ffffff"
+                opacity="0.2"
+              />
+
+              <path
+                d="M 125 385 
+             C 120 330, 130 280, 148 255 
+             C 158 240, 178 245, 178 265 
+             C 178 280, 168 300, 165 330 
+             C 162 360, 150 395, 125 385 Z"
+                fill="#f4ba9f"
+              />
+
+              <!-- Unghia stilizzata del pollice -->
+              <ellipse
+                cx="163"
+                cy="264"
+                rx="5"
+                ry="8"
+                fill="#ffded1"
+                transform="rotate(15 163 264)"
+              />
+
+              <!-- Dettaglio pieghe nocche / polso -->
+              <path
+                d="M 215 455 C 235 462, 265 462, 285 455"
+                stroke="#d98264"
+                stroke-width="3"
+                stroke-linecap="round"
+                fill="none"
+              />
+            </g>
+          </svg>
+          <p>Invia la prescirizione su whatsapp al numero 3801291217</p>
+        </li>
+
+        <li>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 500 500"
+            width="100%"
+            height="100%"
+          >
+            <defs>
+              <!-- Ombreggiatura morbida generale -->
+              <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+                <feDropShadow
+                  dx="0"
+                  dy="12"
+                  stdDeviation="10"
+                  flood-color="#0f172a"
+                  flood-opacity="0.15"
+                />
+              </filter>
+
+              <!-- Gradienti per il terreno e l'acqua -->
+              <linearGradient id="sky-grad" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#e0f2fe" />
+                <stop offset="100%" stop-color="#f8fafc" stop-opacity="0" />
+              </linearGradient>
+
+              <linearGradient id="pin-grad" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#ff5e62" />
+                <stop offset="100%" stop-color="#ff1e27" />
+              </linearGradient>
+
+              <linearGradient id="roof-grad" x1="0" y1="0" x2="1" y2="0">
+                <stop offset="0%" stop-color="#f97316" />
+                <stop offset="100%" stop-color="#ea580c" />
+              </linearGradient>
+
+              <linearGradient id="water-grad" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#38bdf8" />
+                <stop offset="100%" stop-color="#0284c7" />
+              </linearGradient>
+
+              <linearGradient id="green-grad" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#86efac" />
+                <stop offset="100%" stop-color="#22c55e" />
+              </linearGradient>
+
+              <!-- Ombra specifica del segnaposto -->
+              <filter
+                id="pin-shadow"
+                x="-20%"
+                y="-20%"
+                width="140%"
+                height="140%"
+              >
+                <feDropShadow
+                  dx="0"
+                  dy="8"
+                  stdDeviation="4"
+                  flood-color="#0f172a"
+                  flood-opacity="0.2"
+                />
+              </filter>
+            </defs>
+
+            <!-- ================= SFONDO / CIELO STILIZZATO ================= -->
+            <path
+              d="M 100,200 C 100,100 400,100 400,200 Z"
+              fill="url(#sky-grad)"
+              opacity="0.7"
+            />
+            <circle cx="210" cy="140" r="4" fill="#ffffff" opacity="0.6" />
+            <path
+              d="M 310,130 Q 320,125 330,130 Q 335,135 345,130"
+              stroke="#cbd5e1"
+              stroke-width="2"
+              stroke-linecap="round"
+              fill="none"
+              opacity="0.5"
+            />
+
+            <g filter="url(#shadow)">
+              <!-- ================= MAPPA PIEGATA (PROSPETTIVA) ================= -->
+              <!-- Ala Sinistra -->
+              <path
+                d="M 70,370 L 205,410 L 205,170 L 70,140 Z"
+                fill="#f1f5f9"
+              />
+              <path
+                d="M 70,370 L 205,410 L 205,170 L 70,140 Z"
+                fill="#e2e8f0"
+                opacity="0.4"
+              />
+
+              <!-- Ala Centrale -->
+              <path
+                d="M 205,410 L 320,380 L 320,130 L 205,170 Z"
+                fill="#ffffff"
+              />
+
+              <!-- Ala Destra -->
+              <path
+                d="M 320,380 L 430,410 L 430,170 L 320,130 Z"
+                fill="#f1f5f9"
+              />
+              <path
+                d="M 320,380 L 430,410 L 430,170 L 320,130 Z"
+                fill="#cbd5e1"
+                opacity="0.3"
+              />
+
+              <!-- Bordi/Spessore della mappa cartacea -->
+              <path
+                d="M 70,370 L 205,410 L 320,380 L 430,410 L 430,414 L 320,384 L 205,414 L 70,374 Z"
+                fill="#cbd5e1"
+              />
+
+              <!-- ================= ELEMENTI NATURALI & AREE (Ritagliati sulle singole pieghe) ================= -->
+              <!-- Zone Verdi (Ala sinistra) -->
+              <path
+                d="M 75,150 L 150,170 L 110,230 L 75,210 Z"
+                fill="url(#green-grad)"
+                opacity="0.8"
+              />
+              <path
+                d="M 80,310 L 120,320 L 95,360 L 75,350 Z"
+                fill="url(#green-grad)"
+                opacity="0.75"
+              />
+
+              <!-- Zone Verdi & Acqua (Ala Centrale/Casa) -->
+              <path
+                d="M 205,170 L 320,130 L 320,220 L 205,250 Z"
+                fill="#f5f5f4"
+                opacity="0.9"
+              />
+              <!-- Area mista -->
+              <path
+                d="M 215,225 L 310,195 L 305,270 L 210,290 Z"
+                fill="url(#green-grad)"
+                opacity="0.8"
+              />
+              <!-- Parco della casa -->
+
+              <!-- Zone Verdi & Acqua (Ala Destra) -->
+              <path
+                d="M 340,160 L 420,190 L 420,240 L 340,210 Z"
+                fill="url(#green-grad)"
+                opacity="0.8"
+              />
+              <!-- Fiume/Lago -->
+              <path
+                d="M 330,300 Q 360,280 390,320 T 425,320 L 425,360 Q 390,360 360,330 T 330,350 Z"
+                fill="url(#water-grad)"
+              />
+
+              <!-- Strade e tracciati di collegamento -->
+              <!-- Ala sinistra -->
+              <path
+                d="M 120,148 L 205,300 M 70,260 L 205,230"
+                stroke="#ffffff"
+                stroke-width="12"
+                stroke-linecap="round"
+                opacity="0.9"
+              />
+              <path
+                d="M 120,148 L 205,300 M 70,260 L 205,230"
+                stroke="#94a3b8"
+                stroke-width="2"
+                stroke-dasharray="4 4"
+                opacity="0.5"
+              />
+
+              <!-- Ala centrale (Incrocio e vialetto) -->
+              <path
+                d="M 205,300 L 320,270 M 205,230 L 320,200 M 240,175 L 240,380"
+                stroke="#ffffff"
+                stroke-width="14"
+                stroke-linecap="round"
+                opacity="0.9"
+              />
+              <!-- Sentiero tratteggiato verso la casa -->
+              <path
+                d="M 235,325 Q 260,315 260,295"
+                stroke="#64748b"
+                stroke-width="3"
+                stroke-dasharray="4 4"
+                stroke-linecap="round"
+                fill="none"
+              />
+
+              <!-- Ala destra -->
+              <path
+                d="M 320,270 L 430,310 M 320,200 L 430,230"
+                stroke="#ffffff"
+                stroke-width="12"
+                stroke-linecap="round"
+                opacity="0.9"
+              />
+
+              <!-- ================= PICCOLI ALBERI 3D ================= -->
+              <!-- Albero a sinistra -->
+              <ellipse cx="105" cy="220" rx="6" ry="10" fill="#15803d" />
+              <circle cx="105" cy="214" r="8" fill="#22c55e" />
+
+              <!-- Alberi vicino alla casa -->
+              <ellipse cx="225" cy="265" rx="5" ry="8" fill="#166534" />
+              <circle cx="225" cy="260" r="7" fill="#15803d" />
+
+              <ellipse cx="295" cy="225" rx="5" ry="8" fill="#166534" />
+              <circle cx="295" cy="220" r="7" fill="#22c55e" />
+
+              <ellipse cx="380" cy="190" rx="6" ry="10" fill="#15803d" />
+              <circle cx="380" cy="184" r="8" fill="#22c55e" />
+
+              <!-- ================= LA CASA (PROSPETTIVA ISOMETRICA) ================= -->
+              <g transform="translate(10, 5)">
+                <!-- Ombra della casa -->
+                <path
+                  d="M 235,275 L 285,255 L 300,270 L 250,292 Z"
+                  fill="#0f172a"
+                  opacity="0.18"
+                />
+
+                <!-- Muro frontale (sinistro) -->
+                <path
+                  d="M 235,260 L 265,275 L 265,245 L 235,232 Z"
+                  fill="#f8fafc"
+                />
+
+                <!-- Muro laterale (destro) -->
+                <path
+                  d="M 265,275 L 295,260 L 295,230 L 265,245 Z"
+                  fill="#e2e8f0"
+                />
+
+                <!-- Timpa / Frontone (triangolo sopra il muro frontale) -->
+                <path d="M 235,232 L 265,245 L 250,215 Z" fill="#f8fafc" />
+
+                <!-- Tetto (sinistro / sopra il frontone) -->
+                <path
+                  d="M 232,233 L 250,212 L 282,225 L 265,247 Z"
+                  fill="url(#roof-grad)"
+                />
+
+                <!-- Tetto (destro) -->
+                <path
+                  d="M 250,212 L 298,226 L 297,231 L 265,247 Z"
+                  fill="#c2410c"
+                />
+
+                <!-- Dettagli: Porta (sul muro frontale) -->
+                <path
+                  d="M 245,265 L 255,270 L 255,253 L 245,248 Z"
+                  fill="#7c2d12"
+                />
+
+                <!-- Dettagli: Finestra (sul muro laterale) -->
+                <path
+                  d="M 275,254 L 285,249 L 285,242 L 275,247 Z"
+                  fill="#38bdf8"
+                />
+                <path
+                  d="M 275,254 L 285,249 L 285,242 L 275,247 Z"
+                  stroke="#cbd5e1"
+                  stroke-width="1"
+                  fill="none"
+                />
+
+                <!-- Finestrella tonda sulla facciata frontale -->
+                <circle cx="250" cy="235" r="3" fill="#38bdf8" />
+              </g>
+
+              <!-- ================= SEGNAPOSTO / PIN (FLUTTUANTE SOPRA LA CASA) ================= -->
+              <g filter="url(#pin-shadow)" transform="translate(0, -10)">
+                <!-- Animazione/Effetto rimbalzo o altezza -->
+                <!-- Ombra a terra del segnaposto -->
+                <ellipse
+                  cx="265"
+                  cy="268"
+                  rx="14"
+                  ry="5"
+                  fill="#0f172a"
+                  opacity="0.25"
+                />
+
+                <!-- Segnaposto (Pin rosso) -->
+                <path
+                  d="M 265,255 
+               C 235,215 230,175 265,145 
+               C 300,175 295,215 265,255 Z"
+                  fill="url(#pin-grad)"
+                />
+
+                <!-- Cerchio Interno Bianco -->
+                <circle cx="265" cy="180" r="13" fill="#ffffff" />
+
+                <!-- Ombreggiatura interna per tridimensionalità -->
+                <path
+                  d="M 265,255 C 248,233 242,205 250,180 C 242,205 248,233 265,255 Z"
+                  fill="#dc2626"
+                  opacity="0.4"
+                />
+                <circle
+                  cx="263"
+                  cy="178"
+                  r="13"
+                  fill="none"
+                  stroke="#fca5a5"
+                  stroke-width="1.5"
+                  opacity="0.5"
+                />
+              </g>
+            </g>
+          </svg>
+          <p>Concorda indirizzo di consegna con il personale che risponderà</p>
+        </li>
+        <li>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 500 650"
+            width="100%"
+            height="100%"
+          >
+            <defs>
+              <!-- Ombra morbida per il cellulare -->
+              <filter
+                id="phone-shadow"
+                x="-20%"
+                y="-10%"
+                width="140%"
+                height="130%"
+              >
+                <feDropShadow
+                  dx="0"
+                  dy="16"
+                  stdDeviation="16"
+                  flood-color="#0f172a"
+                  flood-opacity="0.16"
+                />
+              </filter>
+
+              <!-- Ombra per le card e i pulsanti -->
+              <filter
+                id="card-shadow"
+                x="-10%"
+                y="-10%"
+                width="120%"
+                height="130%"
+              >
+                <feDropShadow
+                  dx="0"
+                  dy="4"
+                  stdDeviation="6"
+                  flood-color="#0f172a"
+                  flood-opacity="0.06"
+                />
+              </filter>
+
+              <!-- Ombra per il badge di conferma -->
+              <filter
+                id="badge-shadow"
+                x="-20%"
+                y="-20%"
+                width="140%"
+                height="140%"
+              >
+                <feDropShadow
+                  dx="0"
+                  dy="6"
+                  stdDeviation="8"
+                  flood-color="#16a34a"
+                  flood-opacity="0.3"
+                />
+              </filter>
+
+              <!-- Gradiente di sfondo per l'header dell'app -->
+              <linearGradient
+                id="header-grad"
+                x1="0%"
+                y1="0%"
+                x2="100%"
+                y2="100%"
+              >
+                <stop offset="0%" stop-color="#1e293b" />
+                <stop offset="100%" stop-color="#0f172a" />
+              </linearGradient>
+
+              <!-- Gradiente verde successo -->
+              <linearGradient
+                id="success-grad"
+                x1="0%"
+                y1="0%"
+                x2="0%"
+                y2="100%"
+              >
+                <stop offset="0%" stop-color="#22c55e" />
+                <stop offset="100%" stop-color="#16a34a" />
+              </linearGradient>
+
+              <!-- Gradiente pulsante principale -->
+              <linearGradient id="btn-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#2563eb" />
+                <stop offset="100%" stop-color="#3b82f6" />
+              </linearGradient>
+            </defs>
+
+            <!-- ================= ELEMENTI DECORATIVI DI SFONDO ================= -->
+            <circle cx="100" cy="120" r="80" fill="#e0f2fe" opacity="0.6" />
+            <circle cx="420" cy="480" r="110" fill="#f1f5f9" opacity="0.8" />
+            <circle cx="390" cy="180" r="16" fill="#86efac" opacity="0.5" />
+
+            <g transform="translate(100, 30)">
+              <!-- ================= SCOCCA DELLO SMARTPHONE ================= -->
+              <!-- Corpo esterno -->
+              <rect
+                x="0"
+                y="0"
+                width="300"
+                height="580"
+                rx="42"
+                fill="#0f172a"
+                filter="url(#phone-shadow)"
+              />
+              <!-- Bordo metallico interno -->
+              <rect
+                x="3"
+                y="3"
+                width="294"
+                height="574"
+                rx="39"
+                fill="none"
+                stroke="#334155"
+                stroke-width="2.5"
+              />
+
+              <!-- ================= SCHERMO ================= -->
+              <!-- Base display -->
+              <rect
+                x="10"
+                y="10"
+                width="280"
+                height="560"
+                rx="32"
+                fill="#f8fafc"
+              />
+
+              <!-- ================= STATUS BAR & NOTCH ================= -->
+              <!-- Dynamic Island / Speaker -->
+              <rect
+                x="105"
+                y="18"
+                width="90"
+                height="20"
+                rx="10"
+                fill="#0f172a"
+              />
+              <circle cx="178" cy="28" r="3.5" fill="#1e293b" />
+
+              <!-- Icone status bar (Orario, Wi-Fi, Batteria) -->
+              <text
+                x="34"
+                y="32"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif"
+                font-size="11"
+                font-weight="600"
+                fill="#0f172a"
+              >
+                09:41
+              </text>
+              <!-- Tacche segnale e batteria -->
+              <path
+                d="M 235 25 A 4 4 0 0 1 247 25"
+                stroke="#0f172a"
+                stroke-width="2"
+                fill="none"
+                stroke-linecap="round"
+              />
+              <rect
+                x="252"
+                y="24"
+                width="18"
+                height="9"
+                rx="2.5"
+                fill="none"
+                stroke="#0f172a"
+                stroke-width="1.5"
+              />
+              <rect
+                x="254"
+                y="26"
+                width="11"
+                height="5"
+                rx="1"
+                fill="#0f172a"
+              />
+
+              <!-- ================= INTESTAZIONE APP BANCARIA ================= -->
+              <g transform="translate(24, 52)">
+                <!-- Freccia Indietro / Menu -->
+                <path
+                  d="M 6 10 L 0 5 L 6 0"
+                  stroke="#0f172a"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  fill="none"
+                />
+                <text
+                  x="50"
+                  y="8"
+                  font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif"
+                  font-size="13"
+                  font-weight="700"
+                  fill="#0f172a"
+                >
+                  Bonifico Bancario
+                </text>
+                <!-- Icona condivisione / opzioni -->
+                <circle cx="240" cy="5" r="2" fill="#64748b" />
+                <circle cx="246" cy="5" r="2" fill="#64748b" />
+                <circle cx="252" cy="5" r="2" fill="#64748b" />
+              </g>
+
+              <!-- ================= STATO DI CONFERMA ================= -->
+              <!-- Badge circolare di successo -->
+              <circle
+                cx="150"
+                cy="125"
+                r="32"
+                fill="url(#success-grad)"
+                filter="url(#badge-shadow)"
+              />
+              <!-- Spunta verde interna -->
+              <path
+                d="M 139 125 L 147 133 L 163 117"
+                fill="none"
+                stroke="#ffffff"
+                stroke-width="4"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+
+              <!-- Testo esito -->
+              <text
+                x="150"
+                y="180"
+                text-anchor="middle"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif"
+                font-size="16"
+                font-weight="700"
+                fill="#0f172a"
+              >
+                Bonifico Eseguito
+              </text>
+              <text
+                x="150"
+                y="196"
+                text-anchor="middle"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif"
+                font-size="11"
+                fill="#64748b"
+              >
+                Operazione completata con successo
+              </text>
+
+              <!-- Importo trasferito -->
+              <text
+                x="150"
+                y="235"
+                text-anchor="middle"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif"
+                font-size="28"
+                font-weight="800"
+                fill="#0f172a"
+              >
+                € 350,00
+              </text>
+
+              <!-- ================= CARD DETTAGLI TRANSAZIONE ================= -->
+              <g transform="translate(24, 255)">
+                <rect
+                  x="0"
+                  y="0"
+                  width="252"
+                  height="195"
+                  rx="16"
+                  fill="#ffffff"
+                  filter="url(#card-shadow)"
+                />
+
+                <!-- Riga Beneficiario -->
+                <g transform="translate(14, 18)">
+                  <!-- Avatar/Iniziali destinatario -->
+                  <rect
+                    x="0"
+                    y="0"
+                    width="34"
+                    height="34"
+                    rx="10"
+                    fill="#e0f2fe"
+                  />
+                  <text
+                    x="17"
+                    y="22"
+                    text-anchor="middle"
+                    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif"
+                    font-size="13"
+                    font-weight="700"
+                    fill="#0284c7"
+                  >
+                    MR
+                  </text>
+
+                  <text
+                    x="44"
+                    y="14"
+                    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif"
+                    font-size="12"
+                    font-weight="600"
+                    fill="#0f172a"
+                  >
+                    Mario Rossi
+                  </text>
+                  <text
+                    x="44"
+                    y="27"
+                    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif"
+                    font-size="10"
+                    fill="#64748b"
+                  >
+                    IT60 X054 2811 1010 ...
+                  </text>
+                </g>
+
+                <!-- Divisore -->
+                <line
+                  x1="14"
+                  y1="65"
+                  x2="238"
+                  y2="65"
+                  stroke="#f1f5f9"
+                  stroke-width="1.5"
+                />
+
+                <!-- Voce: Tipologia -->
+                <text
+                  x="14"
+                  y="85"
+                  font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif"
+                  font-size="10"
+                  fill="#94a3b8"
+                >
+                  Tipo bonifico
+                </text>
+                <text
+                  x="238"
+                  y="85"
+                  text-anchor="end"
+                  font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif"
+                  font-size="10"
+                  font-weight="600"
+                  fill="#0f172a"
+                >
+                  Istantaneo SEPA
+                </text>
+
+                <!-- Voce: Causale -->
+                <text
+                  x="14"
+                  y="112"
+                  font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif"
+                  font-size="10"
+                  fill="#94a3b8"
+                >
+                  Causale
+                </text>
+                <text
+                  x="238"
+                  y="112"
+                  text-anchor="end"
+                  font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif"
+                  font-size="10"
+                  font-weight="500"
+                  fill="#0f172a"
+                >
+                  Acconto affitto maggio
+                </text>
+
+                <!-- Voce: Commissioni -->
+                <text
+                  x="14"
+                  y="139"
+                  font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif"
+                  font-size="10"
+                  fill="#94a3b8"
+                >
+                  Commissione
+                </text>
+                <text
+                  x="238"
+                  y="139"
+                  text-anchor="end"
+                  font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif"
+                  font-size="10"
+                  font-weight="600"
+                  fill="#16a34a"
+                >
+                  Gratuito (€ 0,00)
+                </text>
+
+                <!-- Divisore tratteggiato -->
+                <line
+                  x1="14"
+                  y1="155"
+                  x2="238"
+                  y2="155"
+                  stroke="#e2e8f0"
+                  stroke-width="1"
+                  stroke-dasharray="4 3"
+                />
+
+                <!-- Codice Riferimento CRO / TRN -->
+                <text
+                  x="14"
+                  y="176"
+                  font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif"
+                  font-size="9"
+                  fill="#94a3b8"
+                >
+                  ID Transazione
+                </text>
+                <text
+                  x="238"
+                  y="176"
+                  text-anchor="end"
+                  font-family="monospace"
+                  font-size="9"
+                  fill="#64748b"
+                >
+                  TRN-984021584
+                </text>
+              </g>
+
+              <!-- ================= PULSANTI D'AZIONE ================= -->
+              <!-- Pulsante Primario: Scarica Ricevuta -->
+              <rect
+                x="24"
+                y="468"
+                width="252"
+                height="42"
+                rx="14"
+                fill="url(#btn-grad)"
+              />
+              <!-- Icona documento/download -->
+              <path
+                d="M 98 488 L 98 494 M 95 491 L 98 494 L 101 491 M 93 496 L 103 496"
+                stroke="#ffffff"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                fill="none"
+              />
+              <text
+                x="135"
+                y="494"
+                text-anchor="middle"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif"
+                font-size="12"
+                font-weight="600"
+                fill="#ffffff"
+              >
+                Scarica Ricevuta PDF
+              </text>
+
+              <!-- Pulsante Secondario: Chiudi -->
+              <text
+                x="150"
+                y="534"
+                text-anchor="middle"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif"
+                font-size="12"
+                font-weight="600"
+                fill="#64748b"
+              >
+                Torna alla Home
+              </text>
+
+              <!-- Barra Home inferiore -->
+              <rect
+                x="105"
+                y="555"
+                width="90"
+                height="4"
+                rx="2"
+                fill="#0f172a"
+                opacity="0.4"
+              />
+            </g>
+          </svg>
+          <p>Effettua il pagamnto tramite satispay o bonifico bancario</p>
+        </li>
+        <li>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 500 500"
+            width="100%"
+            height="100%"
+          >
+            <defs>
+              <!-- Ombra morbida a terra -->
+              <filter
+                id="ground-shadow"
+                x="-20%"
+                y="-20%"
+                width="140%"
+                height="140%"
+              >
+                <feDropShadow
+                  dx="0"
+                  dy="8"
+                  stdDeviation="8"
+                  flood-color="#0f172a"
+                  flood-opacity="0.18"
+                />
+              </filter>
+
+              <!-- Ombra per il pacco volante -->
+              <filter
+                id="box-shadow"
+                x="-30%"
+                y="-20%"
+                width="160%"
+                height="160%"
+              >
+                <feDropShadow
+                  dx="0"
+                  dy="12"
+                  stdDeviation="6"
+                  flood-color="#0f172a"
+                  flood-opacity="0.22"
+                />
+              </filter>
+
+              <!-- Gradiente carrozzeria cabina (Blu vibrante) -->
+              <linearGradient id="cab-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#3b82f6" />
+                <stop offset="100%" stop-color="#1d4ed8" />
+              </linearGradient>
+
+              <!-- Gradiente furgone / cassone di carico -->
+              <linearGradient id="body-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" stop-color="#ffffff" />
+                <stop offset="100%" stop-color="#f1f5f9" />
+              </linearGradient>
+
+              <!-- Gradiente cartone del pacco -->
+              <linearGradient id="box-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#f59e0b" />
+                <stop offset="100%" stop-color="#d97706" />
+              </linearGradient>
+
+              <!-- Gradiente nastro pacco -->
+              <linearGradient id="tape-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#fbbf24" />
+                <stop offset="100%" stop-color="#f59e0b" />
+              </linearGradient>
+
+              <!-- Riflesso vetro parabrezza -->
+              <linearGradient
+                id="windshield-grad"
+                x1="0%"
+                y1="0%"
+                x2="100%"
+                y2="100%"
+              >
+                <stop offset="0%" stop-color="#bae6fd" />
+                <stop offset="60%" stop-color="#38bdf8" />
+              </linearGradient>
+
+              <!-- Gradiente cerchioni ruote -->
+              <linearGradient
+                id="wheel-rim"
+                x1="0%"
+                y1="0%"
+                x2="100%"
+                y2="100%"
+              >
+                <stop offset="0%" stop-color="#e2e8f0" />
+                <stop offset="100%" stop-color="#94a3b8" />
+              </linearGradient>
+            </defs>
+
+            <!-- ================= ELEMENTI DECORATIVI DI SFONDO ================= -->
+            <circle cx="230" cy="220" r="140" fill="#f8fafc" />
+
+            <!-- Scia / Linee cinetiche di velocità -->
+            <path
+              d="M 40,310 L 90,310"
+              stroke="#cbd5e1"
+              stroke-width="4"
+              stroke-linecap="round"
+            />
+            <path
+              d="M 25,325 L 80,325"
+              stroke="#94a3b8"
+              stroke-width="3"
+              stroke-linecap="round"
+              opacity="0.6"
+            />
+            <path
+              d="M 50,340 L 95,340"
+              stroke="#cbd5e1"
+              stroke-width="3"
+              stroke-linecap="round"
+            />
+
+            <!-- ================= OMBRA A TERRA ================= -->
+            <ellipse
+              cx="230"
+              cy="385"
+              rx="175"
+              ry="14"
+              fill="#0f172a"
+              opacity="0.12"
+            />
+
+            <!-- ================= CAMIONCINO ================= -->
+            <g id="truck">
+              <!-- Parafanghi posteriori / telaio nero inferiore -->
+              <rect
+                x="95"
+                y="325"
+                width="235"
+                height="24"
+                rx="6"
+                fill="#1e293b"
+              />
+
+              <!-- CASSONE DI CARICO -->
+              <g filter="url(#ground-shadow)">
+                <rect
+                  x="100"
+                  y="165"
+                  width="165"
+                  height="165"
+                  rx="18"
+                  fill="url(#body-grad)"
+                  stroke="#e2e8f0"
+                  stroke-width="1.5"
+                />
+
+                <!-- Fascia decorativa aziendale lungo il cassone -->
+                <path
+                  d="M 100,240 L 265,240 L 265,268 L 100,268 Z"
+                  fill="#2563eb"
+                  opacity="0.9"
+                />
+
+                <!-- Simbolo freccia express delivery sulla fiancata -->
+                <path
+                  d="M 165,254 L 195,254 M 188,247 L 196,254 L 188,261"
+                  stroke="#ffffff"
+                  stroke-width="3.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  fill="none"
+                />
+
+                <!-- Fessura portellone posteriore -->
+                <line
+                  x1="108"
+                  y1="172"
+                  x2="108"
+                  y2="322"
+                  stroke="#cbd5e1"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+              </g>
+
+              <!-- CABINA GUIDATORE -->
+              <g>
+                <!-- Blocco principale cabina -->
+                <path
+                  d="M 260,195 
+               L 310,195 
+               C 335,195 345,210 355,235 
+               L 375,285 
+               C 378,295 378,330 378,330 
+               L 260,330 Z"
+                  fill="url(#cab-grad)"
+                />
+
+                <!-- Finestrino laterale con riflesso -->
+                <path
+                  d="M 270,206 
+               L 305,206 
+               C 320,206 328,216 336,236 
+               L 348,268 
+               C 349,272 346,275 342,275 
+               L 270,275 Z"
+                  fill="url(#windshield-grad)"
+                />
+
+                <!-- Riflesso bianco sul parabrezza -->
+                <path
+                  d="M 285,210 L 305,210 L 330,270 L 315,270 Z"
+                  fill="#ffffff"
+                  opacity="0.3"
+                />
+
+                <!-- Specchietto retrovisore -->
+                <rect
+                  x="338"
+                  y="248"
+                  width="12"
+                  height="20"
+                  rx="4"
+                  fill="#1e293b"
+                />
+                <rect
+                  x="332"
+                  y="255"
+                  width="8"
+                  height="4"
+                  rx="1.5"
+                  fill="#64748b"
+                />
+
+                <!-- Paraurti anteriore -->
+                <rect
+                  x="355"
+                  y="316"
+                  width="30"
+                  height="18"
+                  rx="6"
+                  fill="#334155"
+                />
+
+                <!-- Faro anteriore (acceso con alone luminoso) -->
+                <rect
+                  x="366"
+                  y="288"
+                  width="14"
+                  height="14"
+                  rx="4"
+                  fill="#facc15"
+                />
+                <polygon
+                  points="380,285 435,270 435,320 380,305"
+                  fill="#fef08a"
+                  opacity="0.25"
+                />
+
+                <!-- Maniglia portiera -->
+                <rect
+                  x="280"
+                  y="285"
+                  width="16"
+                  height="4"
+                  rx="2"
+                  fill="#1e293b"
+                  opacity="0.6"
+                />
+              </g>
+
+              <!-- ================= RUOTE TRIDIMENSIONALI ================= -->
+              <!-- Ruota Posteriore -->
+              <g transform="translate(145, 350)">
+                <!-- Gomma esterna -->
+                <circle cx="0" cy="0" r="32" fill="#0f172a" />
+                <!-- Cerchione in lega -->
+                <circle cx="0" cy="0" r="20" fill="url(#wheel-rim)" />
+                <!-- Mozzo centrale ruota -->
+                <circle cx="0" cy="0" r="9" fill="#1e293b" />
+                <!-- Dadi ruota -->
+                <circle cx="-13" cy="0" r="2" fill="#64748b" />
+                <circle cx="13" cy="0" r="2" fill="#64748b" />
+                <circle cx="0" cy="-13" r="2" fill="#64748b" />
+                <circle cx="0" cy="13" r="2" fill="#64748b" />
+              </g>
+
+              <!-- Ruota Anteriore -->
+              <g transform="translate(325, 350)">
+                <!-- Gomma esterna -->
+                <circle cx="0" cy="0" r="32" fill="#0f172a" />
+                <!-- Cerchione in lega -->
+                <circle cx="0" cy="0" r="20" fill="url(#wheel-rim)" />
+                <!-- Mozzo centrale ruota -->
+                <circle cx="0" cy="0" r="9" fill="#1e293b" />
+                <!-- Dadi ruota -->
+                <circle cx="-13" cy="0" r="2" fill="#64748b" />
+                <circle cx="13" cy="0" r="2" fill="#64748b" />
+                <circle cx="0" cy="-13" r="2" fill="#64748b" />
+                <circle cx="0" cy="13" r="2" fill="#64748b" />
+              </g>
+            </g>
+
+            <!-- ================= PACCO IN CONSEGNA (FLUTTUANTE / DINAMICO) ================= -->
+            <g
+              transform="translate(370, 160) rotate(12)"
+              filter="url(#box-shadow)"
+            >
+              <!-- Scatola di cartone -->
+              <rect
+                x="0"
+                y="0"
+                width="70"
+                height="70"
+                rx="10"
+                fill="url(#box-grad)"
+              />
+
+              <!-- Nastro adesivo orizzontale -->
+              <rect
+                x="0"
+                y="27"
+                width="70"
+                height="16"
+                fill="url(#tape-grad)"
+              />
+
+              <!-- Nastro adesivo verticale -->
+              <rect
+                x="27"
+                y="0"
+                width="16"
+                height="70"
+                fill="url(#tape-grad)"
+              />
+
+              <!-- Etichetta di spedizione con codice a barre stilizzato -->
+              <rect x="8" y="8" width="22" height="15" rx="2" fill="#ffffff" />
+              <line
+                x1="11"
+                y1="12"
+                x2="27"
+                y2="12"
+                stroke="#0f172a"
+                stroke-width="1.5"
+              />
+              <line
+                x1="11"
+                y1="15"
+                x2="24"
+                y2="15"
+                stroke="#0f172a"
+                stroke-width="1.5"
+                stroke-dasharray="2 1"
+              />
+              <line
+                x1="11"
+                y1="18"
+                x2="21"
+                y2="18"
+                stroke="#94a3b8"
+                stroke-width="1"
+              />
+
+              <!-- Simbolo "Fragile / Alto" (Due frecce verso l'alto) -->
+              <path
+                d="M 48,56 L 48,48 M 45,51 L 48,48 L 51,51"
+                stroke="#92400e"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                fill="none"
+              />
+              <path
+                d="M 56,56 L 56,48 M 53,51 L 56,48 L 59,51"
+                stroke="#92400e"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                fill="none"
+              />
+            </g>
+
+            <!-- Linee di moto e scintille attorno al pacco in arrivo -->
+            <path
+              d="M 365,145 Q 385,130 405,140"
+              stroke="#38bdf8"
+              stroke-width="3"
+              stroke-linecap="round"
+              fill="none"
+              opacity="0.8"
+            />
+            <circle cx="465" cy="190" r="3" fill="#fbbf24" />
+            <circle cx="360" cy="180" r="2.5" fill="#38bdf8" />
+          </svg>
+          <p>
+            Una volta ricevuto il pagamento riceverai il prodotto a casa
+            nell'arco di 24h
+          </p>
+        </li>
       </ul>
+    
     </body>
   </body>
 </html>

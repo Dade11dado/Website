@@ -52,7 +52,6 @@ p {
   max-height: 100%;
 }
 
-
 @media (max-width: 768px) {
   .presentation {
     display: flex;
@@ -69,5 +68,46 @@ p {
 
   #cosmesi {
     flex-direction: column;
+  }
+
+  #nostriProdotti {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    overflow-y: hidden;
+    gap: 16px;
+    padding: 16px 0;
+
+    /* --- LE REGOLE CHIAVE PER RISOLVERE IL TUO PROBLEMA --- */
+    width: 100%;
+    max-width: 100%; /* Impedisce alla galleria di superare lo schermo */
+    box-sizing: border-box;
+    min-width: 0; /* Fondamentale se il genitore ha display: flex */
+
+    /* Effetto carosello fluido */
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  #nostriProdotti .card {
+    flex: 0 0 auto; /* Non si rimpiccioliscono */
+    width: 220px; /* Larghezza fissa della singola card */
+    margin: 0;
+    scroll-snap-align: start; /* Allinea la card all'inizio durante lo snap */
+  }
+
+  #nostriProdotti .card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+  }
+
+  #nostriProdotti .card figcaption {
+    text-align: center;
+    margin-top: 8px;
+    font-weight: 600;
   }
 }
