@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: #848884;
+  text-decoration: none;
 }
 
 #notification {
@@ -30,7 +30,7 @@
 #notification a h2 {
   color: white;
   font-size: 1rem;
-   text-decoration: none;
+  text-decoration: none;
 }
 
 #notification img {
@@ -56,6 +56,45 @@ h1 {
   margin: auto;
   height: calc(100vh / 3);
   max-width: 100%;
+}
+
+.social-icons {display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; /* o flex-start se le vuoi a sinistra */
+  gap: 40px;
+  
+  /* Evita che il blocco si allarghi verticalmente */
+  flex-grow: 0;
+  flex-shrink: 0;
+  margin: 20px 0; /
+}
+.social-icons a {
+  display: inline-flex;
+  line-height: 0; /* Rimuove lo spazio fantasma sotto i link inline */
+}
+
+.social-icons img,
+.social-icon {
+  width: 40px !important;
+  height: 40px !important;
+  display: block;
+}
+
+.social-icon {
+  width: 32px; /* Imposta la larghezza desiderata */
+  height: 32px; /* Mantiene le proporzioni quadrate */
+  object-fit: contain; /* Evita deformazioni dell'immagine */
+  display: block;
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease;
+}
+
+/* Effetto hover opzionale */
+.social-icon:hover {
+  transform: scale(1.1);
+  opacity: 0.85;
 }
 
 #presentation {
