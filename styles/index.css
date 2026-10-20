@@ -3,6 +3,12 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+
+}
+
+h2{
+  font-weight:lighter;
 }
 
 #notification {
@@ -187,4 +193,16 @@ h1 {
   top: 0;
   right: 0;
   cursor: pointer;
+}
+
+footer{
+  margin-bottom: 0;
+  background-color: #c8102e;
+}
+
+footer p{
+  line-height: 2rem;
+  text-align: center;
+  color:white;
+  padding:1rem
 }
